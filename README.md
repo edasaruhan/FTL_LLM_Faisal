@@ -1,25 +1,42 @@
 
-# Sentiment Analysis Using Hugging Face
+# Assignment 2: Text Generation and NLP Projects
 
-This project implements a sentiment analysis task using pre-trained models from the Hugging Face library, specifically BERT. The project aligns with the Sustainable Development Goal (SDG) 12: Responsible Consumption and Production.
+## Overview
+
+This repository contains code for a text generation application and a natural language processing project focused on text embeddings and classification. An optional semantic search engine is also included.
 
 ## Project Structure
-- `fine_tuning_script.py`: Python script for loading, fine-tuning, and evaluating the BERT model.
-- `dataset/`: Directory for the dataset used in training.
-- `results/`: Directory for storing the output of the fine-tuning process.
-- `logs/`: Directory for logging the training process.
-- `README.md`: This file.
 
-## Steps to Run
-1. Install the required libraries: `pip install transformers torch`
-2. Run the Python script: `python fine_tuning_script.py`
-3. Check the `results/` directory for the fine-tuned model.
+- `text_generation_app.py`: Code for the text generation application using Streamlit.
+- `text_classification.py`: Code for exploring text embeddings and performing text classification.
+- `semantic_search.py`: Code for building a semantic search engine using FAISS.
 
-## Dataset
-The dataset used in this project consists of simple sentences with binary labels indicating positive (1) or negative (0) sentiment.
+## Setup Instructions
 
-## Evaluation
-The model is evaluated based on accuracy and F1-score before and after fine-tuning.
+1. Clone this repository: `git clone <repository_url>`
+2. Install the required dependencies: `pip install -r requirements.txt`
+3. Run the text generation app: `streamlit run text_generation_app.py`
+4. Run the text classification script: `python text_classification.py`
+5. Run the semantic search engine: `python semantic_search.py`
+
+## Usage
+
+### Text Generation App
+
+1. Launch the app using Streamlit.
+2. Enter a prompt related to SDGs and click "Generate Text."
+3. The generated text will be displayed below the input field.
+
+### NLP Project
+
+1. Run `text_classification.py` to explore text embeddings and perform classification.
+2. Modify the script to change datasets or embedding types as needed.
+
+### Semantic Search Engine
+
+1. Run `semantic_search.py` and enter a search query.
+2. The script will return the top 5 documents related to the query.
 
 ## License
-This project is open-source under the MIT license.
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
